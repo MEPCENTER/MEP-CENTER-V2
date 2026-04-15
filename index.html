@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="MEP Center — Jasa perencanaan dan drafting sistem MEP: Mechanical, Electrical, Plumbing. Revit BIM, AutoCAD 2D/3D, ETAP, DED, RAB untuk gedung dan industri." />
+  <title>MEP Design &amp; Drafting Services Center</title>
+  <link rel="icon" type="image/jpeg" href="img/ok1.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="dark-mode">
+
+<!-- ============================================
+     NAVBAR
+     ============================================ -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <img src="img/ok2.png" alt="Logo MEP" width="40" height="40" class="me-2">
+      MEP<span>Center</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home |</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About |</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services |</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery |</a></li>
+        <li class="nav-item"><a class="nav-link" href="mep.html">Apa itu MEP? |</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact |</a></li>
+        <li class="nav-item"><a class="nav-link" href="Profil.html">Profil</a></li>
+        <!-- Theme Toggle — icon only -->
+        <li class="nav-item theme-switch-wrapper">
+          <button id="theme-toggle" title="Ganti Tema">
+            <i id="theme-icon" class="fas fa-sun"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ============================================
+     HOME / HERO
+     ============================================ -->
+<section id="home" class="home-section d-flex align-items-center">
+
+  <!-- Animated circuit canvas (background) -->
+  <canvas id="circuit-canvas"></canvas>
+
+  <div class="container" style="position:relative; z-index:2;">
+    <div class="row">
+      <div class="col-md-5">
+
+        <!-- Badge -->
+        <div class="hero-badge anim-1">
+          <span class="badge-dot"></span>
+          JASA FREELANCE PERENCANAAN TEKNIK
+        </div>
+
+        <h2 class="display-7 fw-bold anim-2">WELCOME TO,</h2>
+        <h3 class="display-10 fw-bold anim-3">
+          MEP Design and Drafting<br>
+          <span class="highlight">Services Center</span>
+        </h3>
+        <p class="lead anim-4">"Desain Cepat, Cerdas dan Efisiensi"</p>
+
+        <div class="hero-cta anim-4">
+          <a href="#services" class="btn-neon-primary">Lihat Layanan</a>
+          <a href="#contact" class="btn-neon-outline">Hubungi Kami</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================
+     STATS BAR
+     ============================================ -->
+<div class="stats-bar">
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="250" data-suffix="+">250+</span>
+    <span class="stat-label">Proyek Selesai</span>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="15" data-suffix="+">15+</span>
+    <span class="stat-label">Tahun Pengalaman</span>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="98" data-suffix="%">98%</span>
+    <span class="stat-label">Kepuasan Klien</span>
+  </div>
+  <div class="stat-item reveal">
+    <span class="stat-num" data-target="50" data-suffix="+">50+</span>
+    <span class="stat-label">Engineer Aktif</span>
+  </div>
+</div>
+
+
+<!-- ============================================
+     ABOUT
+     ============================================ -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+
+    <span class="section-tag">Tentang Kami</span>
+    <h2 class="mb-4" data-aos="fade-up">About</h2>
+
+    <p data-aos="fade-right">
+      <b>MEP CENTER </b>merupakan sebuah jasa feelance teknik yang berfokus pada layanan drafting dan perencanaan sistem MEP (Mechanical, Electrical, Plumbing). Dengan pengalaman luas di berbagai jenis proyek mulai dari gedung komersial, Pabrik, institusi pendidikan, rumah sakit, hingga infrastruktur publik kami menghadirkan solusi desain yang presisi, efisien, dan siap diterapkan di lapangan.
+    </p>
+
+    <p data-aos="fade-left" data-aos-delay="50">
+      Didukung oleh tim Engineering berpengalaman, kami menguasai berbagai platform desain teknis seperti AutoCAD 2D/3D, Revit (BIM), ETAP untuk sistem kelistrikan, Simulasi HVAC berbasis VRF &amp; Heatload Calculation, Estimasi menggunakan PlantSwift &amp; Microsoft Office. Kami juga menerapkan metode perhitungan dan teknologi terbaru untuk menghasilkan estimasi yang praktis, terintegrasi, serta mendukung proses pelaksanaan proyek secara lebih efektif dan terarah.
+    </p>
+
+    <!-- Software Tools Grid -->
+    <div class="tech-grid-label" data-aos="fade-up" data-aos-delay="80">
+      <span class="section-tag" style="margin-bottom:20px;">Software &amp; Tools</span>
+    </div>
+    <div class="tech-software-grid" data-aos="fade-up" data-aos-delay="120">
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="AutoCAD" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-drafting-compass"></i></div>
+        </div>
+        <span class="sw-name">AutoCAD</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="Revit" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-cube"></i></div>
+        </div>
+        <span class="sw-name">Revit</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="Sketchup" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-cubes"></i></div>
+        </div>
+        <span class="sw-name">Sketchup</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="ETAP" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-bolt"></i></div>
+        </div>
+        <span class="sw-name">ETAP</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="VRV Express" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-wind"></i></div>
+        </div>
+        <span class="sw-name">VRV Express</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="Headload" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-temperature-high"></i></div>
+        </div>
+        <span class="sw-name">Headload</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="PlanSwift" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-ruler-combined"></i></div>
+        </div>
+        <span class="sw-name">PlanSwift</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="MS Project" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-project-diagram"></i></div>
+        </div>
+        <span class="sw-name">MS Project</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="MS Office" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-file-word"></i></div>
+        </div>
+        <span class="sw-name">MS Office</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="Photoshop" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-paint-brush"></i></div>
+        </div>
+        <span class="sw-name">Photoshop</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="Sketch Up" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-vector-square"></i></div>
+        </div>
+        <span class="sw-name">Sketch Up</span>
+      </div>
+
+      <div class="sw-card">
+        <div class="sw-logo-box">
+          <img src="img/kilobos.png" alt="VS Code" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="sw-logo-fallback"><i class="fas fa-code"></i></div>
+        </div>
+        <span class="sw-name">VS Code</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================
+     SERVICES
+     ============================================ -->
+<section id="services" class="py-5">
+  <div class="container">
+
+    <span class="section-tag">Layanan</span>
+    <h2 class="mb-4">Services</h2>
+
+    <!-- Paket Lengkap DED -->
+    <div class="mb-5">
+      <h4 class="fw-bold"> Paket Lengkap DED (Detail Engineering Design):</h4>
+      <p>
+        DED adalah tahapan perencanaan teknik secara rinci dan lengkap yang digunakan sebagai acuan utama untuk pelaksanaan konstruksi di lapangan.
+        Dalam konteks MEP, DED mencakup gambar kerja lengkap (shop drawing, layout, single line, isometrik, detail instalasi),
+        Laporan perhitungan teknis, RAB &amp; RKS.
+      </p>
+      <div class="ded-img-wrapper my-4">
+        <img src="img/Paket_lengkap.png" alt="Detail DED" class="img-fluid" style="max-width:600px;">
+      </div>
+    </div>
+
+    <!-- Paket Partial -->
+    <div>
+      <h4 class="fw-bold">Paket Partial / Terpisah :</h4>
+      <p>Layanan ini cocok untuk kebutuhan tertentu yang tidak memerlukan satu paket penuh.
+         Anda dapat memilih satu atau beberapa layanan berikut sesuai kebutuhan proyek:</p>
+
+      <div class="row g-4">
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card card-custom p-4 h-100">
+            <div class="mb-3 fs-2"><i class="fas fa-project-diagram"></i></div>
+            <h5 class="fw-semibold mb-2">2D Drawing Layout</h5>
+            <p class="text-muted small">Penyusunan gambar teknis dua dimensi untuk sistem MEP berdasarkan denah arsitektural. Meliputi jalur pipa plumbing, ducting HVAC, kabel tray, titik lampu, saklar, panel, sprinkler, dan perangkat lainnya. Gambar disusun sesuai standar teknis dan mudah dibaca dan diterapkan di lapangan.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-card card-custom p-4 h-100">
+            <div class="mb-3 fs-2"><i class="fas fa-cubes"></i></div>
+            <h5 class="fw-semibold mb-2">3D Modeling</h5>
+            <p class="text-muted small">Pembuatan model tiga dimensi MEP menggunakan software seperti Revit / Autocad 3D. Cocok untuk kebutuhan yang mendetail , juga untuk deteksi tabrakan (clash detection), dan visualisasi sistem. juga untuk memudahkan perencanaan instalasi dan prefabrikasi di lapangan ( Fitup ).</p>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card card-custom p-4 h-100">
+            <div class="mb-3 fs-2"><i class="fas fa-chart-line"></i></div>
+            <h5 class="fw-semibold mb-2">Analisa dan Perhitungan</h5>
+            <p class="text-muted small">Merupakan Laporan perhitungan diantaranya  Kapasitas pompa, Perhitungan instalasi air hujan ,  Perhitungan  perhitungan Air Change, simulasi ETAP ( Beban Listrik, Drop Voltage, Capasitor Bank ) , simulasi Headload &amp; HVAC VRF , dll.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card card-custom p-4 h-100">
+            <div class="mb-3 fs-2"><i class="fas fa-file-invoice-dollar"></i></div>
+            <h5 class="fw-semibold mb-2">RAB (Rancangan Anggaran Biaya)</h5>
+            <p class="text-muted small">Penyusunan estimasi biaya pekerjaan MEP berdasarkan gambar teknis dan spesifikasi material. Dapat digunakan untuk tender, perencanaan anggaran internal, maupun evaluasi efisiensi proyek.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+          <div class="service-card card-custom p-4 h-100">
+            <div class="mb-3 fs-2"><i class="fas fa-clipboard-check"></i></div>
+            <h5 class="fw-semibold mb-2">RKS (Rancangan Kerja &amp; Syarat-Syarat Teknis)</h5>
+            <p class="text-muted small">Dokumen teknis pendamping gambar kerja yang menjelaskan standar pelaksanaan, material yang digunakan, metode pemasangan, serta ketentuan umum dan teknis sesuai regulasi dan standar proyek.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card card-custom p-4 h-100">
+            <div class="mb-3 fs-2"><i class="fas fa-edit"></i></div>
+            <h5 class="fw-semibold mb-2">Revisi Atau Review Gambar Lama</h5>
+            <p class="text-muted small">Layanan koreksi, pembaruan, atau penyesuaian terhadap gambar MEP existing atau as-built. Cocok untuk proyek renovasi, audit sistem eksisting, atau menyesuaikan gambar terhadap kondisi lapangan terbaru.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================
+     GALLERY
+     ============================================ -->
+<section id="gallery">
+  <div class="container">
+    <span class="section-tag">Portofolio</span>
+    <h2 class="mb-4 text-center">Gallery Project</h2>
+
+    <!-- Preview Area -->
+    <div id="previewArea" class="row mb-5 d-none">
+      <div class="col-md-6">
+        <img id="previewImage" src="" alt="Preview" class="img-fluid">
+      </div>
+      <div class="col-md-6 d-flex align-items-center">
+        <p id="previewDesc" class="fs-6 mb-0"></p>
+      </div>
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="row g-4">
+
+      <!-- Gambar 1 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="50">
+        <div class="thumb-box">
+          <img src="img/SINGLE LINE DIAGRAM.png" class="img-fluid thumb-img"
+               data-full="img/SINGLE LINE DIAGRAM.png"
+               data-desc=" <h4>Single Line Diagram (SLD)</h4>
+       <p><b>SLD</b> adalah representasi skematik dari sistem MEP dalam bentuk diagram satu garis. 
+        Diagram ini tidak menampilkan ukuran fisik atau posisi aktual di lapangan, 
+        tetapi berfokus pada jalur logika aliran daya, fluida, atau udara dari satu titik ke titik lainnya.
+        Dalam sistem kelistrikan misalnya, SLD memperlihatkan bagaimana sumber listrik mendistribusikan daya ke panel-panel, peralatan, dan beban akhir. 
+        Begitu pula dalam sistem plumbing dan mekanikal, SLD menjelaskan bagaimana fluida mengalir dan terkoneksi antara pompa, tangki, dan terminal akhir.</p>
+       <h5>Gambar ini digunakan untuk:</h5>
+        <ul>
+         <li>Memberikan pemahaman menyeluruh tentang logika dan urutan sistem.</li>
+         <li>Menjelaskan konektivitas antar komponen secara ringkas.</li>
+         <li>Membantu koordinasi awal antar disiplin dalam proses desain.</li>
+         <li>Berfokus pada <b>pemahaman sistem,</b> bukan dimensi fisik</li>
+       </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">Single Line Diagram Sistem</div>
+      </div>
+
+      <!-- Gambar 2 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="thumb-box">
+          <img src="img/2D ISOMETRIK.png" class="img-fluid thumb-img"
+               data-full="img/2D ISOMETRIK.png"
+               data-desc="<h4>2D Isometrik</h4>
+               <p>Gambar isometrik merupakan representasi dua dimensi dari sistem MEP yang digambar 
+                secara perspektif 3D namun tetap berada dalam format 2D. Gambar ini sangat efektif 
+                untuk memberikan pemahaman visual terhadap alur sistem pipa, ducting, maupun tray dalam arah horizontal dan vertikal 
+                secara bersamaan. Isometrik sangat berguna dalam menjelaskan bagaimana sistem berpindah antar level/lantai dan 
+                bagaimana sambungan serta fitting saling terhubung.</p>
+                 <h5>Gambar ini digunakan untuk:</h5>
+                <ul>
+                  <li>Menjelaskan arah aliran pipa atau ducting secara lebih visual.</li>
+                  <li>Mempermudah pembacaan transisi vertikal dan horizontal.</li>
+                  <li>Digunakan untuk koordinasi lapangan dan visualisasi sambungan fitting.</li>
+                  <li>Memberikan informasi elevasi dan jenis sambungan secara lebih intuitif.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">2D Isometrik</div>
+      </div>
+
+      <!-- Gambar 3 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="thumb-box">
+          <img src="img/2D 1 LINE.png" class="img-fluid thumb-img"
+               data-full="img/2D 1 LINE.png"
+               data-desc="<h4>2D Layout 1 Line</h4>
+               <p>Gambar ini merupakan perwakilan awal jalur sistem MEP dalam bentuk garis tunggal (single line) yang ditarik di atas denah bangunan. Tujuannya adalah memberikan gambaran umum arah dan letak sistem tanpa menampilkan ukuran aktual dari komponen. Layout ini sering digunakan dalam tahap awal desain dan menjadi jembatan sebelum dikembangkan ke shop drawing yang lebih detail.</p>
+                 <h5>Gambar ini digunakan untuk:</h5>
+                <ul>
+                  <li>Menunjukkan arah dan posisi awal jalur pipa, kabel, atau duct.</li>
+                  <li>Acuan dasar pengembangan menjadi shop drawing.</li>
+                  <li>Koordinasi antar sistem MEP secara konseptual.</li>
+                  <li><b>Tidak menyesuaikan</b> denah sipil secara detail, lebih fokus pada arah sistem.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">2D Layout 1 Line</div>
+      </div>
+
+      <!-- Gambar 4 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="thumb-box">
+          <img src="img/2D SHOP DRAWING.png" class="img-fluid thumb-img"
+               data-full="img/2D SHOP DRAWING.png"
+               data-desc="<h4>2D Shop Drawing</h4>
+               <p>2D Layout Detail atau shop drawing adalah gambar kerja detail yang menunjukkan ukuran aktual 
+                dari sistem MEP di lapangan. Menggunakan dua garis (double line) untuk mewakili 
+                diameter ducting, pipa, atau kabel tray, gambar ini dibuat berdasarkan kondisi aktual bangunan 
+                dan koordinasi dengan gambar arsitektur dan struktur terbaru. 
+                Gambar ini krusial dalam proses instalasi karena menyajikan posisi dan dimensi real dari elemen-elemen MEP.</p>
+                 <h5>Gambar ini digunakan untuk:</h5>
+                <ul>
+                  <li>Menggambarkan dimensi, ukuran, dan posisi akurat jalur MEP.</li>
+                  <li>Koordinasi instalasi lapangan dengan ukuran aktual.</li>
+                  <li>Digunakan oleh pelaksana/kontraktor sebagai acuan kerja.</li>
+                  <li>Gambar ini juga <b> menyesuaikan dengan denah sipil terbaru </b>dan detail bangunan.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">2D Layout Detail (Shop Drawing)</div>
+      </div>
+
+      <!-- Gambar 5 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="50">
+        <div class="thumb-box">
+          <img src="img/2D POTONGAN.png" class="img-fluid thumb-img"
+               data-full="img/2D POTONGAN.png"
+               data-desc="<h4>2D Potongan (Section drawing)</h4>
+               <p>Gambar potongan (section drawing) menggambarkan irisan vertikal bangunan dan sistem di dalamnya. Gambar ini sangat penting untuk menunjukkan posisi sistem MEP terhadap lantai, plafond, dan struktur bangunan secara vertikal. Dengan potongan, kita dapat memverifikasi elevasi sistem dan mengecek kemungkinan tabrakan dengan elemen struktur lainnya.</p>
+                 <h5>Gambar ini digunakan untuk:</h5>
+                <ul>
+                  <li>Menunjukkan elevasi dan hubungan vertikal antar sistem.</li>
+                  <li>Validasi potensi konflik antar sistem atau struktur.</li>
+                  <li>Menentukan posisi bracket, gantungan, dan elemen vertikal lainnya.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">2D Potongan (Section Drawing)</div>
+      </div>
+
+      <!-- Gambar 6 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="thumb-box">
+          <img src="img/2D KOMPOSIT.png" class="img-fluid thumb-img"
+               data-full="img/2D KOMPOSIT.png"
+               data-desc="<h4>2D Komposit Instalasi</h4>
+               <p>Gambar ini merupakan gabungan dari seluruh sistem MEP (mekanikal, elektrikal, dan plumbing) yang disatukan dalam satu gambar koordinasi. Tujuannya adalah untuk memastikan tidak terjadi benturan antar sistem saat instalasi di lapangan. Gambar komposit instalasi menjadi salah satu syarat utama sebelum pekerjaan konstruksi dimulai, terutama di proyek besar yang kompleks.</p>
+                 <h5>Gambar ini digunakan untuk:</h5>
+                <ul>
+                  <li>Mengetahui titik benturan antar sistem (MEP Coordination Drawing).</li>
+                  <li>Menyusun rute prioritas jalur instalasi antar disiplin.</li>
+                  <li>Diperlukan sebelum pelaksanaan instalasi untuk menghindari konflik.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">2D Komposit Instalasi</div>
+      </div>
+
+      <!-- Gambar 7 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="thumb-box">
+          <img src="img/2D KOMPOSIT CEILING.png" class="img-fluid thumb-img"
+               data-full="img/2D KOMPOSIT CEILING.png"
+               data-desc="<h4>2D Komposit Ceiling</h4>
+               <p>Gambar 2D Komposit Ceiling adalah gambar koordinasi yang memuat seluruh elemen sistem MEP yang terpasang pada permukaan plafon. Gambar ini menjadi penting dalam tahap koordinasi antar disiplin untuk memastikan tidak terjadi tabrakan antar perangkat dan seluruh titik-titik terakomodasi dengan baik secara estetika dan teknis.</p>
+                 <h5>Gambar ini digunakan untuk:</h5>
+                <ul>
+                  <li>Menampilkan lokasi perangkat seperti lampu, sprinkler, detektor kebakaran, speaker sistem tata suara, dan grille AC.</li>
+                  <li>Menyesuaikan posisi elemen MEP dengan modul plafon (modular ceiling).</li>
+                  <li>Menjamin keteraturan, kesimetrisan, dan keterpaduan antar sistem di plafon.</li>
+                  <li>Sebagai referensi bagi kontraktor interior dalam membuat lubang atau bukaan pada ceiling.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">2D Komposit Ceiling</div>
+      </div>
+
+      <!-- Gambar 8 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="thumb-box">
+          <img src="img/2D STANDARD DETAIL.png" class="img-fluid thumb-img"
+               data-full="img/2D STANDARD DETAIL.png"
+               data-desc="<h4>2D Standart Detail</h4>
+               <p>Standard detail adalah kumpulan gambar teknis berulang yang menunjukkan metode pemasangan, detail sambungan, dukungan (support), gantungan, dan penetrasi sistem MEP. Gambar ini biasanya sudah ditentukan dalam standar perusahaan atau mengikuti best practice industri, dan digunakan sebagai acuan seragam untuk berbagai titik instalasi.</p>
+                 <h5>Gambar ini digunakan untuk:</h5>
+                <ul>
+                  <li>Menampilkan lokasi perangkat seperti lampu, sprinkler, detektor kebakaran, speaker sistem tata suara, dan grille AC.</li>
+                  <li>Menyesuaikan posisi elemen MEP dengan modul plafon (modular ceiling).</li>
+                  <li>Menjamin keteraturan, kesimetrisan, dan keterpaduan antar sistem di plafon.</li>
+                  <li>Sebagai referensi bagi kontraktor interior dalam membuat lubang atau bukaan pada ceiling.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">2D Standart Detail</div>
+      </div>
+
+      <!-- Gambar 9 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="50">
+        <div class="thumb-box">
+          <img src="img/3D MODEL.png" class="img-fluid thumb-img"
+               data-full="img/3D MODEL.png"
+               data-desc="<h4>3D Model</h4>
+               <p>3D Model adalah representasi visual dalam bentuk tiga dimensi dari sistem MEP, dengan fokus pada detail ruang-ruang yang memiliki konsentrasi tinggi peralatan dan aksesoris, seperti ruang chiller, ruang pompa, panel listrik, shaft instalasi, dan ruang utilitas lainnya. Model ini menampilkan bentuk fisik dan posisi aktual dari setiap komponen secara presisi.</p>
+                 <h5>Gambar ini digunakan untuk:</h5>
+                <ul>
+                  <li>Menampilkan tata letak dan posisi peralatan serta aksesoris dalam ruang terbatas secara detail dan realistis.</li>
+                  <li>Memberikan gambaran spasial terhadap interaksi antar elemen seperti pipa, ducting, tray kabel, dan mesin-mesin teknis.</li>
+                  <li>Memudahkan proses koordinasi lintas disiplin serta validasi desain terhadap kondisi eksisting atau arsitektural.</li>
+                  <li>Digunakan dalam presentasi visual, koordinasi lapangan, dan sebagai acuan fabrikasi/instalasi.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">3D Model</div>
+      </div>
+
+      <!-- Gambar 10 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="thumb-box">
+          <img src="img/3D ISOMETRIK.png" class="img-fluid thumb-img"
+               data-full="img/3D ISOMETRIK.png"
+               data-desc="<h4>3D Isometrik</h4>
+               <p>3D Isometrik merupakan versi tiga dimensi dari gambar 2D isometrik yang menampilkan alur instalasi sistem MEP secara lebih visual. Gambar ini tidak hanya menunjukkan arah jalur, tetapi juga posisi spasial terhadap elemen bangunan lain.</p>
+                 <h5>Gambar ini digunakan untuk:</h5>
+                <ul>
+                  <li>Menjelaskan arah dan pola instalasi dengan tampilan spasial yang mudah dipahami oleh teknisi.</li>
+                  <li>Menunjukkan koneksi antar komponen seperti elbow, tee, sambungan, dan fitting lain dalam format visual 3D.</li>
+                  <li>Membantu dalam pengecekan konflik atau clash terhadap struktur atau sistem lainnya.</li>
+                  <li>Menyederhanakan pemahaman bagi pihak non-teknis dalam meninjau jalur instalasi</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">3D Isometrik</div>
+      </div>
+
+      <!-- Gambar 11 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="thumb-box">
+          <img src="img/BIM.png" class="img-fluid thumb-img"
+               data-full="img/BIM.png"
+               data-desc="<h4>Revit/BIM</h4>
+               <p>Revit / BIM (Building Information Modeling) adalah platform pemodelan informasi bangunan yang mengintegrasikan seluruh disiplin (arsitektur, struktur, MEP) dalam satu sistem digital. Dalam konteks MEP, BIM digunakan untuk membuat model yang tidak hanya tiga dimensi, tetapi juga mengandung informasi detail seperti spesifikasi teknis, kapasitas, hingga data manufaktur.</p>
+                 <h5>Model ini digunakan untuk:</h5>
+                <ul>
+                  <li>Menyusun model koordinasi lintas sistem yang terintegrasi dan bebas konflik (clash-free).</li>
+                  <li>Menyimpan informasi teknis dari tiap komponen, memudahkan proses pengambilan keputusan teknis dan manajemen aset.</li>
+                  <li>Membantu simulasi, analisis, dan estimasi biaya serta volume pekerjaan.</li>
+                  <li>Digunakan untuk menghasilkan gambar kerja otomatis (shop drawing) dan dokumentasi as-built yang akurat.</li>
+                  <li>Mendukung proses konstruksi digital dan facility management pasca pembangunan.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">Revit/BIM</div>
+      </div>
+
+      <!-- Gambar 12 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="thumb-box">
+          <img src="img/PLANTSWIFT.png" class="img-fluid thumb-img"
+               data-full="img/PLANTSWIFT.png"
+               data-desc="<h4>PlantSwift</h4>
+               <p>PlanSwift adalah perangkat lunak takeoff dan estimasi konstruksi yang digunakan untuk menghitung volume, area, dan panjang dari gambar proyek konstruksi digital seperti PDF atau CAD.</p>
+                 <h5>Fungsi utama dalam MEP:</h5>
+                <ul>
+                  <li>Melakukan digital takeoff untuk menghitung panjang pipa, luas ducting, atau volume material.</li>
+                  <li>Menghitung estimasi biaya material dan tenaga kerja.</li>
+                  <li>Membuat formula perhitungan khusus sesuai kebutuhan proyek MEP.</li>
+                  <li>Menghasilkan laporan estimasi biaya yang terstruktur.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">PlanSwift</div>
+      </div>
+
+      <!-- Gambar 13 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="50">
+        <div class="thumb-box">
+          <img src="img/ETAP.png" class="img-fluid thumb-img"
+               data-full="img/ETAP.png"
+               data-desc="<h4>ETAP</h4>
+               <p>ETAP (Electrical Transient Analyzer Program) adalah perangkat lunak analisis dan desain sistem tenaga listrik yang digunakan untuk simulasi, pemodelan, dan studi kelistrikan.</p>
+                 <h5>Fungsi utama dalam MEP:</h5>
+                <ul>
+                  <li>Menganalisis aliran daya, short circuit, dan proteksi sistem listrik.</li>
+                  <li>Mendesain sistem distribusi listrik sesuai standar internasional.</li>
+                  <li>Melakukan simulasi kinerja sistem tenaga listrik.</li>
+                  <li>Mengoptimalkan desain panel, kabel, dan sistem proteksi.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">ETAP</div>
+      </div>
+
+      <!-- Gambar 14 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="thumb-box">
+          <img src="img/VRV EXPRESS.png" class="img-fluid thumb-img"
+               data-full="img/VRV EXPRESS.png"
+               data-desc="<h4>VRV EXPRESS</h4>
+               <p>VRV Express adalah perangkat lunak desain dari Daikin untuk merencanakan sistem pendingin udara tipe VRV/VRF secara cepat dan akurat.</p>
+                 <h5>Fungsi utama dalam MEP:</h5>
+                <ul>
+                  <li>Menghitung kapasitas pendinginan berdasarkan kebutuhan ruangan.</li>
+                  <li>Mendesain konfigurasi unit indoor dan outdoor.</li>
+                  <li>Menentukan panjang pipa refrigeran yang optimal.</li>
+                  <li>Menghasilkan gambar layout dan spesifikasi teknis.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">VRV Express</div>
+      </div>
+
+      <!-- Gambar 15 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="thumb-box">
+          <img src="img/HEADLOAD.png" class="img-fluid thumb-img"
+               data-full="img/HEADLOAD.png"
+               data-desc="<h4>Head Load Calculation</h4>
+               <p>Head Load Calculation adalah metode dan perangkat lunak perhitungan beban pendinginan dan pemanasan untuk desain HVAC.</p>
+                 <h5>Fungsi utama dalam MEP:</h5>
+                <ul>
+                  <li>Menghitung beban panas dari faktor eksternal dan internal.</li>
+                  <li>Menentukan kapasitas AC atau sistem pendingin yang tepat.</li>
+                  <li>Mengoptimalkan efisiensi energi pada desain HVAC.</li>
+                  <li>Menyediakan data dasar untuk perancangan ducting dan sistem distribusi udara.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">Head Load Calculation</div>
+      </div>
+
+      <!-- Gambar 16 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="thumb-box">
+          <img src="img/MS project.png" class="img-fluid thumb-img"
+               data-full="img/MS project.png"
+               data-desc="<h4>Microsoft Project Pro</h4>
+               <p>Microsoft Project Professional adalah software manajemen proyek yang membantu dalam perencanaan, penjadwalan, pengalokasian sumber daya, dan pemantauan progres pekerjaan.</p>
+                 <h5>Fungsi utama dalam MEP:</h5>
+                <ul>
+                  <li>Menyusun Work Breakdown Structure (WBS).</li>
+                  <li>Membuat jadwal proyek secara detail.</li>
+                  <li>Mengatur alokasi sumber daya dan tenaga kerja.</li>
+                  <li>Memantau deviasi waktu dan biaya proyek.</li>
+                  <li>Menghasilkan laporan kemajuan untuk manajemen dan klien.</li>
+                </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">Microsoft Project Pro</div>
+      </div>
+
+      <!-- Gambar 17 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="50">
+        <div class="thumb-box">
+          <img src="img/SKEMATIK DIAGRAM SISTEM.png" class="img-fluid thumb-img"
+               data-full="img/SKEMATIK DIAGRAM SISTEM.png"
+               data-desc="<h4>Skematik Diagram Sistem</h4>
+             <p>Skematik diagram sistem adalah gambar representasi alur kerja suatu sistem MEP secara sederhana dan terstruktur, tanpa menampilkan detail fisik, tetapi fokus pada hubungan antar komponen.</p>
+             <h5>Fungsi utama dalam MEP:</h5>
+             <ul>
+               <li>Menjelaskan alur kerja sistem secara konseptual.</li>
+               <li>Mempermudah pemahaman hubungan antar peralatan.</li>
+               <li>Digunakan sebagai dasar analisa dan pengembangan desain.</li>
+               <li>Membantu koordinasi awal sebelum gambar detail.</li>
+             </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">Skematik Diagram Sistem</div>
+      </div>
+
+      <!-- Gambar 18 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="thumb-box">
+          <img src="img/FABRIKASI.png" class="img-fluid thumb-img"
+               data-full="img/FABRIKASI.png"
+               data-desc="<h4>Detail Fabrikasi</h4>
+             <p>Detail fabrikasi adalah gambar teknis yang digunakan sebagai acuan dalam proses pembuatan komponen sebelum dipasang di lapangan.</p>
+             <h5>Fungsi utama dalam MEP:</h5>
+             <ul>
+               <li>Menyediakan detail ukuran dan spesifikasi komponen.</li>
+               <li>Menjadi acuan proses fabrikasi di workshop.</li>
+               <li>Mengurangi kesalahan produksi dan pemasangan.</li>
+               <li>Memastikan kesesuaian antara desain dan hasil produksi.</li>
+             </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">Detail Fabrikasi</div>
+      </div>
+
+      <!-- Gambar 19 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="thumb-box">
+          <img src="img/PANEL MAKER.png" class="img-fluid thumb-img"
+               data-full="img/PANEL MAKER.png"
+               data-desc="<h4>Panel Maker</h4>
+             <p>Panel maker adalah proses perencanaan dan pembuatan panel listrik sesuai kebutuhan sistem distribusi tenaga listrik dalam proyek MEP.</p>
+             <h5>Fungsi utama dalam MEP:</h5>
+             <ul>
+               <li>Mendesain dan merakit panel distribusi listrik.</li>
+               <li>Menentukan komponen proteksi seperti MCCB, MCB, dan relay.</li>
+               <li>Memastikan keamanan dan keandalan sistem listrik.</li>
+               <li>Menjadi acuan instalasi dan pengujian panel.</li>
+             </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">Panel Maker</div>
+      </div>
+
+      <!-- Gambar 20 -->
+      <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="thumb-box">
+          <img src="img/METODE KERJA.png" class="img-fluid thumb-img"
+               data-full="img/METODE KERJA.png"
+               data-desc="<h4>Metode Kerja</h4>
+             <p>Metode kerja adalah dokumen teknis yang menjelaskan langkah-langkah pelaksanaan pekerjaan instalasi MEP secara sistematis dan terstruktur.</p>
+             <h5>Fungsi utama dalam MEP:</h5>
+             <ul>
+               <li>Menjadi panduan pelaksanaan pekerjaan di lapangan.</li>
+               <li>Menjelaskan urutan kerja dan standar pelaksanaan.</li>
+               <li>Menjamin kualitas pekerjaan sesuai spesifikasi.</li>
+               <li>Mendukung keselamatan kerja (K3) dan efisiensi proyek.</li>
+             </ul>">
+          <div class="thumb-overlay"></div>
+          <div class="plus-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <div class="project-caption">Metode Kerja</div>
+      </div>
+
+    </div><!-- end row -->
+
+    <!-- Tombol lihat lebih banyak -->
+    <div class="text-center mt-5">
+      <a href="galeri_projek.html" target="_blank" class="btn btn-primary">Lihat Lebih Banyak</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================================
+     FOOTER / CONTACT
+     ============================================ -->
+<section id="contact">
+  <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row">
+
+        <!-- Kolom 1: Kontak & Sosial -->
+        <div class="col-md-4 mb-4">
+          <h5>MEP Center</h5>
+          <address>
+            Rejoso, Nganjuk Jawa Timur<br>
+            Andri Susandianto ST<br>
+            Telepon: 0895370734896<br>
+            Email: Mepcenter.as@gmail.com<br>
+          </address>
+          <p class="mt-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="https://www.instagram.com/otnaidnasus?igsh=MTlmYWQwbm5wcHNlaw==" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#" class="text-white me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+          </p>
+        </div>
+
+        <!-- Kolom 2: Site Menu -->
+        <div class="col-md-4 mb-4">
+          <h5>Site Menu</h5>
+          <ul class="list-unstyled">
+            <li><a href="plumbing.html" class="text-white text-decoration-none" target="_blank">Plumbing</a></li>
+            <li><a href="pemadam.html" class="text-white text-decoration-none" target="_blank">Pemadam Kebakaran</a></li>
+            <li><a href="hvac.html#services" class="text-white text-decoration-none" target="_blank">HVAC</a></li>
+            <li><a href="elektrikal.html#gallery" class="text-white text-decoration-none" target="_blank">Elektrikal</a></li>
+            <li><a href="elektronik.html" class="text-white text-decoration-none" target="_blank">Elektronik &amp; Komunikasi</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom 3: About MEP -->
+        <div class="col-md-4 mb-4">
+          <h5>About MEP Center</h5>
+          <p>Jasa Perencanaan MEP Gedung, Konsultan Desain MEP Profesional, Gambar Teknik MEP 2D &amp; 3D, 
+            Jasa DED (Detail Engineering Design) MEP, Desain HVAC, Plumbing, dan Listrik,
+             MEP Engineering Services Indonesia, Jasa Shop Drawing MEP, RAB &amp; RKS Sistem MEP, 
+             Simulasi Headload HVAC, Desain Sistem Fire Protection, Konsultan Sistem Mekanikal Elektrikal, 
+             BIM Modeling untuk Proyek MEP, Jasa Desain Instalasi Listrik Gedung, 
+             Gambar Instalasi Air Bersih &amp; Kotor, Jasa Koordinasi Gambar MEP BIM</p>
+        </div>
+
+      </div>
+
+      <div class="text-center pt-3 border-top border-secondary">
+        &copy; 2025 MEP Center. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</section>
+
+
+<!-- ============================================
+     SCRIPTS
+     ============================================ -->
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, delay: 100, once: false });
+</script>
+
+<!-- Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Main Custom Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
